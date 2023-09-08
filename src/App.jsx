@@ -10,7 +10,7 @@ const App = () => {
   })
   return (
     <ThemeContext.Provider value={{ theme, setTheme }}>
-      <div className={`${theme} ${theme == 'dark' ? 'bg-[#121212] text-white' : null}`}>
+      <div className={`${theme} ${theme == 'dark' ? 'bg-[#121212] text-white' : null} min-h-[100vh]`}>
         <Header />
         <Home />
       </div>
